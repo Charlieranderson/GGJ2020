@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{7948CDE9-7EEB-0D85-E1DD-A8E2E4462493}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CursorController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/LevelController.cs" Line="8" Column="30" />
+      <File FileName="Assets/Scripts/CursorController.cs" Line="49" Column="55" />
+      <File FileName="Assets/Scripts/PlayerInputs.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GGJ2020" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="CursorController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="45b9d21a-48e3-4cf5-af2d-f402c6ed2a3c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
