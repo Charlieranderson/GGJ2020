@@ -44,6 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666e1a63999064e60b8a37f8b6825e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tasks:
+  - name: Do Thing
+    isDone: 0
+  - name: Do Second Thing
+    isDone: 0
 --- !u!114 &6900443025622179138
 MonoBehaviour:
   m_ObjectHideFlags: 0

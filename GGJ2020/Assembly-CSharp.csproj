@@ -87,8 +87,11 @@
     <Compile Include="Assets\FaceMouse.cs" />
     <Compile Include="Assets\Reticle.cs" />
     <Compile Include="Assets\Scripts\CursorController.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\LevelController.cs" />
+    <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\PlayerInputs.cs" />
+    <Compile Include="Assets\Scripts\Task.cs" />
     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
     <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />

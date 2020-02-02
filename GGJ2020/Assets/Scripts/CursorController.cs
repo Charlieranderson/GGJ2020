@@ -13,15 +13,12 @@ public class CursorController : MonoBehaviour
 
     LayerMask moveableMask;
 
-    Camera cam;
-
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.SetCursor(selectIcon, Vector2.zero, CursorMode.Auto);
+        //Cursor.SetCursor(selectIcon, Vector2.zero, CursorMode.Auto);
         moveableMask = LayerMask.GetMask("Moveable");
         lc = LevelController.instance;
-        cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -41,36 +38,49 @@ public class CursorController : MonoBehaviour
             {
                 DropObject();
             }
-            else
-            {
-                moveVec = cam.ScreenToWorldPoint(Input.mousePosition);
-                moveVec.z = 0;
-                movingObject.transform.position = moveVec;
-            }
+
 
         }
 
-
-
     }
 
-
+    /// <summary>
+    /// Player has Clicked on an object
+    /// </summary>
     void SelectNewObject()
     {
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, Mathf.Infinity,moveableMask);
         if(hit.collider != null)
         {
             movingObject = hit.collider.gameObject;
+            ToggleInteractableEngaged(true);
         }
 
     }
 
+    /// <summary>
+    /// Player has released object
+    /// </summary>
     void DropObject()
     {
+        ToggleInteractableEngaged(false);
         movingObject = null;
     }
 
-   
+    /// <summary>
+    /// Helper method for toggling engagement with facemouse component
+    /// </summary>
+    /// <param name="tf"></param>
+    void ToggleInteractableEngaged(bool tf) {
 
+        if (movingObject.GetComponent<Interactable>())
+        {
+            movingObject.GetComponent<Interactable>().engaged = tf;
+        }
+        else
+        {
+            Debug.LogWarning("No Interactable component on object that is moveable. D:");
+        }
+    }
 
 }

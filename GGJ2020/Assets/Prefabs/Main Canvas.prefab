@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3512377911607434449}
   - component: {fileID: 3512377911607434448}
   - component: {fileID: 3512377911607434451}
+  - component: {fileID: 47638793}
   m_Layer: 5
   m_Name: Main Canvas
   m_TagString: Untagged
@@ -112,4 +113,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectIcon: {fileID: 2800000, guid: 78b6f9fc690b94185bf9a3ad7ca8bb10, type: 3}
-  movingObject: {fileID: 0}
+--- !u!114 &47638793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3512377911607434450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2057fbdcc1b34c889ce5d59a2f3b067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
