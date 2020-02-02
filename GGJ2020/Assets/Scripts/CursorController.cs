@@ -8,7 +8,7 @@ public class CursorController : MonoBehaviour
     [SerializeField] Texture2D selectIcon;
     LevelController lc;
 
-    [SerializeField] GameObject movingObject;
+    GameObject movingObject;
     Vector3 moveVec;
 
     LayerMask moveableMask;
@@ -30,24 +30,24 @@ public class CursorController : MonoBehaviour
 
         if (lc.input.Click.WasPressed)
         {
-            if(movingObject != null)
+
+            SelectNewObject();
+
+        }
+
+        if(movingObject != null)
+        {
+            if (lc.input.Click.WasReleased)
             {
                 DropObject();
             }
             else
             {
-                SelectNewObject();
+                moveVec = cam.ScreenToWorldPoint(Input.mousePosition);
+                moveVec.z = 0;
+                movingObject.transform.position = moveVec;
             }
-            
-        }
 
-        if(movingObject != null)
-        {
-            
-            moveVec = cam.ScreenToWorldPoint(Input.mousePosition);
-            moveVec.z = 0;
-            movingObject.transform.position = moveVec;
-            
         }
 
 
